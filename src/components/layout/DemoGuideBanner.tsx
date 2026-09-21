@@ -80,12 +80,12 @@ export const DemoGuideBanner: React.FC<DemoGuideBannerProps> = ({
   ];
 
   return (
-    <div className="bg-gradient-to-r from-slate-900 via-blue-950/70 to-slate-900 border-b border-blue-900/40 px-4 py-2 flex items-center justify-between gap-4 text-xs select-none shrink-0 transition-all">
+    <div className="bg-white border-b border-slate-800/40 px-4 py-2 flex items-center justify-between gap-4 text-xs select-none shrink-0 transition-all">
       <div className="flex items-center gap-2 text-slate-300 shrink-0">
         <div className="flex items-center justify-center w-5 h-5 rounded-md bg-blue-600/30 text-blue-400 border border-blue-500/30">
           <Compass className="w-3.5 h-3.5" />
         </div>
-        <span className="font-semibold text-white">Recommended Demo Flow:</span>
+        <span className="font-semibold text-white">Suggested review path:</span>
         <span className="hidden xl:inline text-slate-400 text-[11px]">
           (3–5 min evaluation path showcasing the decision support paradigm)
         </span>

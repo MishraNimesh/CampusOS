@@ -83,12 +83,12 @@ export const TopBar: React.FC<TopBarProps> = ({
 
   return (
     <>
-      <header className="h-16 border-b border-slate-800 bg-slate-950/80 backdrop-blur-md px-4 sm:px-6 flex items-center justify-between gap-4 z-20 shrink-0 select-none">
+      <header className="h-16 border-b border-slate-800 bg-slate-950 px-4 sm:px-6 flex items-center justify-between gap-4 z-20 shrink-0 select-none">
         {/* Left Search Bar Trigger */}
         <div className="flex items-center gap-4 flex-1 max-w-xl">
           <button
             onClick={onOpenSearch}
-            className="w-full flex items-center justify-between px-3.5 py-2 rounded-xl bg-slate-900/90 border border-slate-800 text-sm text-slate-400 hover:text-slate-200 hover:border-slate-700 transition-all group shadow-inner cursor-pointer"
+            className="w-full flex items-center justify-between px-3.5 py-2 rounded-md bg-slate-900 border border-slate-800 text-sm text-slate-400 hover:text-slate-200 hover:border-slate-700 transition-all group cursor-pointer"
           >
             <div className="flex items-center gap-2.5">
               <Search className="w-4 h-4 text-slate-400 group-hover:text-blue-400 transition-colors" />
@@ -125,7 +125,7 @@ export const TopBar: React.FC<TopBarProps> = ({
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
             <Cpu className="w-3.5 h-3.5 text-blue-400 group-hover:rotate-12 transition-transform" />
-            <span className="font-mono font-semibold">8 AGENTS ONLINE</span>
+             <span className="font-mono font-semibold">MONITORING ACTIVE</span>
           </button>
 
           {/* Academic Term Dropdown */}
@@ -260,7 +260,7 @@ export const TopBar: React.FC<TopBarProps> = ({
           <div className="p-4 rounded-xl bg-blue-950/20 border border-blue-900/30 text-xs text-slate-300">
             <div className="flex items-center gap-2 font-semibold text-blue-300 mb-1">
               <Cpu className="w-4 h-4 text-blue-400" />
-              <span>Campus OS Sentinel Active</span>
+               <span>Campus operations monitoring active</span>
             </div>
             <p className="text-[11px] text-slate-400 leading-relaxed">
               Timetable, Faculty, and Infrastructure agents scan all scheduling changes continuously every 60 seconds.

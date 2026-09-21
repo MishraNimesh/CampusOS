@@ -116,7 +116,7 @@ export const WhatIfSimulator: React.FC<WhatIfSimulatorProps> = ({
             size="sm"
             onClick={handleRunSimulation}
             isLoading={isSimulating}
-            className="text-xs bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500"
+            className="text-xs bg-blue-600 text-white hover:bg-blue-500 shadow-md shadow-blue-900/30 focus:ring-blue-500 border border-blue-500/30"
           >
             <Play className="w-3.5 h-3.5" />
             <span>Simulate Impact</span>
@@ -371,7 +371,7 @@ export const WhatIfSimulator: React.FC<WhatIfSimulatorProps> = ({
           </Card>
 
           {/* Bottom Action Footer */}
-          <div className="p-5 rounded-xl bg-gradient-to-r from-purple-950/40 via-slate-900 to-blue-950/40 border border-purple-900/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="p-5 rounded-xl bg-white border border-purple-900/40 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
               <h4 className="text-sm font-bold text-white">
                 Ready to execute this mitigation strategy?
@@ -385,7 +385,7 @@ export const WhatIfSimulator: React.FC<WhatIfSimulatorProps> = ({
               variant="glow"
               size="md"
               onClick={handleConvertToDecision}
-              className="shrink-0 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500"
+              className="shrink-0 bg-blue-600 text-white hover:bg-blue-500 shadow-md shadow-blue-900/30 focus:ring-blue-500 border border-blue-500/30"
             >
               <Zap className="w-4 h-4" />
               <span>Convert to Active Decision</span>

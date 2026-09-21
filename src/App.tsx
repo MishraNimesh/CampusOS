@@ -167,7 +167,7 @@ export function App() {
 
   return (
     <ToastProvider>
-      <div className="flex h-screen w-screen bg-slate-950 text-slate-100 overflow-hidden font-sans">
+      <div className="flex h-screen w-screen bg-[#171717] text-neutral-100 overflow-hidden font-sans">
         {/* Left Navigation Sidebar */}
         <Sidebar
           currentRoute={currentRoute}
@@ -177,7 +177,7 @@ export function App() {
         />
 
         {/* Main Content Area */}
-        <div className="flex flex-col flex-1 min-w-0 h-full overflow-hidden bg-slate-950">
+        <div className="flex flex-col flex-1 min-w-0 h-full overflow-hidden bg-[#171717]">
           {/* Top Demo Flow Guide Bar */}
           <DemoGuideBanner
             currentRoute={currentRoute}
@@ -194,7 +194,7 @@ export function App() {
           />
 
           {/* Page Scrollable Viewport */}
-          <main className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8 bg-[#0b0f19] gradient-mesh">
+          <main className="flex-1 overflow-y-auto p-4 sm:p-6 lg:p-8 bg-[#171717]">
             <div className="max-w-7xl mx-auto">{renderCurrentView()}</div>
           </main>
         </div>

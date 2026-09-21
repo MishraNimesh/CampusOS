@@ -104,7 +104,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             </span>
           </div>
           <p className="text-sm text-slate-400">
-            Here's what's happening across your campus operations today. 8 autonomous agents monitoring constraints in real time.
+             A concise view of the decisions, capacity, and exceptions shaping today's operations.
           </p>
         </div>
 
@@ -117,7 +117,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             className="text-xs border-slate-700 hover:border-purple-500/40 text-slate-300 hover:text-purple-300"
           >
             <Sparkles className="w-3.5 h-3.5 text-purple-400" />
-            <span>Run What-If Scenario</span>
+             <span>Scenario planner</span>
           </Button>
 
           <Button
@@ -127,7 +127,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
             className="text-xs"
           >
             <Zap className="w-3.5 h-3.5" />
-            <span>Open Priority Decision</span>
+             <span>Review priority</span>
           </Button>
         </div>
       </div>
@@ -142,7 +142,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
         >
           <div className="flex items-center justify-between text-slate-400 mb-2">
             <span className="text-xs font-semibold uppercase tracking-wider">Active Issues</span>
-            <div className="p-1.5 rounded-lg bg-rose-500/10 text-rose-400 border border-rose-500/20 group-hover:scale-110 transition-transform">
+             <div className="p-1.5 rounded-md bg-rose-500/10 text-rose-400 border border-rose-500/20">
               <AlertTriangle className="w-3.5 h-3.5" />
             </div>
           </div>
@@ -157,11 +157,11 @@ export const Dashboard: React.FC<DashboardProps> = ({
         <Card
           hoverable
           onClick={() => onRouteChange('faculty')}
-          className="cursor-pointer border-slate-800/80 bg-slate-900/60 p-4 relative overflow-hidden group gradient-border animate-fade-up"
+          className="cursor-pointer border-slate-800/80 bg-slate-900/60 p-4 relative overflow-hidden group animate-fade-up"
         >
           <div className="flex items-center justify-between text-slate-400 mb-2">
             <span className="text-xs font-semibold uppercase tracking-wider">Faculty Utilization</span>
-            <div className="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 group-hover:scale-110 transition-transform">
+             <div className="p-1.5 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
               <Users className="w-3.5 h-3.5" />
             </div>
           </div>
@@ -176,11 +176,11 @@ export const Dashboard: React.FC<DashboardProps> = ({
         <Card
           hoverable
           onClick={() => onRouteChange('infrastructure')}
-          className="cursor-pointer border-slate-800/80 bg-slate-900/60 p-4 relative overflow-hidden group gradient-border animate-fade-up"
+          className="cursor-pointer border-slate-800/80 bg-slate-900/60 p-4 relative overflow-hidden group animate-fade-up"
         >
           <div className="flex items-center justify-between text-slate-400 mb-2">
             <span className="text-xs font-semibold uppercase tracking-wider">Room Utilization</span>
-            <div className="p-1.5 rounded-lg bg-blue-500/10 text-blue-400 border border-blue-500/20 group-hover:scale-110 transition-transform">
+             <div className="p-1.5 rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/20">
               <Building2 className="w-3.5 h-3.5" />
             </div>
           </div>
@@ -195,11 +195,11 @@ export const Dashboard: React.FC<DashboardProps> = ({
         <Card
           hoverable
           onClick={() => onRouteChange('examinations')}
-          className="cursor-pointer border-slate-800/80 bg-slate-900/60 p-4 relative overflow-hidden group gradient-border animate-fade-up"
+          className="cursor-pointer border-slate-800/80 bg-slate-900/60 p-4 relative overflow-hidden group animate-fade-up"
         >
           <div className="flex items-center justify-between text-slate-400 mb-2">
             <span className="text-xs font-semibold uppercase tracking-wider">Upcoming Exams</span>
-            <div className="p-1.5 rounded-lg bg-purple-500/10 text-purple-400 border border-purple-500/20 group-hover:scale-110 transition-transform">
+             <div className="p-1.5 rounded-md bg-purple-500/10 text-purple-400 border border-purple-500/20">
               <FileSpreadsheet className="w-3.5 h-3.5" />
             </div>
           </div>
@@ -218,7 +218,7 @@ export const Dashboard: React.FC<DashboardProps> = ({
         >
           <div className="flex items-center justify-between text-slate-400 mb-2">
             <span className="text-xs font-semibold uppercase tracking-wider">Pending Decisions</span>
-            <div className="p-1.5 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20 group-hover:scale-110 transition-transform">
+             <div className="p-1.5 rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">
               <Zap className="w-3.5 h-3.5" />
             </div>
           </div>
@@ -230,8 +230,8 @@ export const Dashboard: React.FC<DashboardProps> = ({
         </Card>
       </div>
 
-      {/* Natural Language Decision Query Bar (Structured AI Decision Engine) */}
-      <Card className="border-blue-900/50 bg-gradient-to-r from-slate-900 via-slate-900/90 to-blue-950/30 shadow-xl overflow-hidden gradient-animated animate-glow-pulse">
+      {/* Operations query */}
+      <Card className="border-blue-900/50 bg-white shadow-xl overflow-hidden">
         <CardContent className="p-5 sm:p-6 space-y-4">
           <div className="flex items-center justify-between gap-4">
             <div className="flex items-center gap-2.5">
@@ -240,9 +240,9 @@ export const Dashboard: React.FC<DashboardProps> = ({
               </div>
               <div>
                 <h3 className="text-sm font-bold text-white flex items-center gap-2">
-                  Campus OS Intelligent Query
+                   Operations query
                   <span className="text-[10px] px-2 py-0.5 rounded-full bg-blue-500/15 text-blue-300 font-mono border border-blue-500/20">
-                    Decision-Support Engine
+                     Live workspace
                   </span>
                 </h3>
                 <p className="text-xs text-slate-400">

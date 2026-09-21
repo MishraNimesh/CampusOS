@@ -63,7 +63,7 @@ export const AgentsOverview: React.FC<AgentsOverviewProps> = ({
         <div>
           <div className="flex items-center gap-2 mb-1">
             <h1 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-              AI Agents Swarm
+               Operations monitoring
             </h1>
             <Badge variant="primary" size="sm" withDot>
               8 Specialized Agents Online
@@ -99,7 +99,7 @@ export const AgentsOverview: React.FC<AgentsOverviewProps> = ({
       </div>
 
       {/* System Telemetry Pulse Card */}
-      <div className="p-5 rounded-2xl bg-gradient-to-r from-slate-900 via-blue-950/40 to-slate-900 border border-slate-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="p-5 rounded-2xl bg-white border border-slate-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <div className="relative">
             <div className="w-12 h-12 rounded-2xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-blue-400 shadow-inner">
@@ -109,10 +109,10 @@ export const AgentsOverview: React.FC<AgentsOverviewProps> = ({
           </div>
           <div>
             <div className="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">
-              Multi-Agent Orchestrator Status
+               Monitoring status
             </div>
             <h3 className="text-lg font-bold text-white">
-              Continuous Operational Synthesis Active
+               Campus operations are being monitored
             </h3>
             <p className="text-xs text-slate-400">
               Synchronizing 320 timetable slots, 84 faculty workloads, and 48 infrastructure facilities.
@@ -149,7 +149,7 @@ export const AgentsOverview: React.FC<AgentsOverviewProps> = ({
               key={agent.id}
               className={`p-5 flex flex-col justify-between transition-all group ${
                 isMaster
-                  ? 'border-blue-500/50 bg-gradient-to-br from-slate-900 to-blue-950/40 shadow-lg shadow-blue-950/30 lg:col-span-2'
+                  ? 'border-blue-500/50 bg-white shadow-lg shadow-blue-950/30 lg:col-span-2'
                   : 'border-slate-800 bg-slate-900/70 hover:border-slate-700'
               }`}
             >

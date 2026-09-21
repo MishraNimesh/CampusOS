@@ -18,14 +18,14 @@ export const Badge: React.FC<BadgeProps> = ({
   const baseStyles = 'inline-flex items-center font-medium rounded-full transition-colors whitespace-nowrap';
 
   const variants = {
-    default: 'bg-slate-800 text-slate-300 border border-slate-700/80',
-    primary: 'bg-blue-950/70 text-blue-300 border border-blue-800/60',
-    success: 'bg-emerald-950/70 text-emerald-300 border border-emerald-800/60',
-    warning: 'bg-amber-950/70 text-amber-300 border border-amber-800/60',
-    danger: 'bg-rose-950/70 text-rose-300 border border-rose-800/60',
-    purple: 'bg-purple-950/70 text-purple-300 border border-purple-800/60',
-    neutral: 'bg-slate-900/90 text-slate-400 border border-slate-800',
-    outline: 'bg-transparent text-slate-300 border border-slate-700'
+    default: 'bg-slate-100 text-slate-600 border border-slate-200',
+    primary: 'bg-blue-50 text-blue-700 border border-blue-200',
+    success: 'bg-emerald-50 text-emerald-700 border border-emerald-200',
+    warning: 'bg-amber-50 text-amber-700 border border-amber-200',
+    danger: 'bg-rose-50 text-rose-700 border border-rose-200',
+    purple: 'bg-purple-50 text-purple-700 border border-purple-200',
+    neutral: 'bg-slate-50 text-slate-600 border border-slate-200',
+    outline: 'bg-transparent text-slate-600 border border-slate-300'
   };
 
   const dotColors = {

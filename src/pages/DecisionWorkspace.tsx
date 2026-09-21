@@ -144,7 +144,7 @@ export const DecisionWorkspace: React.FC<DecisionWorkspaceProps> = ({
       </div>
 
       {/* Main Decision Title Banner */}
-      <div className="p-6 rounded-2xl bg-gradient-to-r from-slate-900 via-blue-950/40 to-slate-900 border border-slate-800 shadow-xl space-y-3">
+      <div className="p-6 rounded-2xl bg-white border border-slate-800 shadow-xl space-y-3">
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
           <div>
             <div className="text-xs font-semibold text-blue-400 uppercase tracking-wider font-mono mb-1">
@@ -280,7 +280,7 @@ export const DecisionWorkspace: React.FC<DecisionWorkspaceProps> = ({
       </Card>
 
       {/* RECOMMENDED ACTION SECTION (HERO CARD) */}
-      <Card className="border-blue-500/40 bg-gradient-to-br from-slate-900 via-blue-950/30 to-slate-900 shadow-2xl shadow-blue-950/40 relative overflow-hidden">
+      <Card className="border-blue-500/40 bg-white shadow-2xl shadow-blue-950/40 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
 
         <CardHeader className="border-b border-blue-900/40 pb-4">

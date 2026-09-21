@@ -49,7 +49,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'decision-center', label: 'Decision Center', icon: Zap, badge: '2 Ready', badgeVariant: 'primary' },
     { id: 'what-if', label: 'What-if Simulator', icon: Sparkles, badge: 'New', badgeVariant: 'purple' },
-    { id: 'agents', label: 'AI Agents Hub', icon: Bot, badge: '8 Active', badgeVariant: 'neutral' },
+    { id: 'agents', label: 'Monitoring', icon: Bot, badge: '8 Active', badgeVariant: 'neutral' },
     { id: 'academic', label: 'Academic', icon: GraduationCap },
     { id: 'faculty', label: 'Faculty Workload', icon: Users, badge: '2 Overload', badgeVariant: 'warning' },
     { id: 'timetable', label: 'Timetable', icon: Calendar, badge: '1 Conflict', badgeVariant: 'danger' },
@@ -80,20 +80,20 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div className="flex items-center justify-between h-16 px-4 border-b border-slate-800/80 bg-slate-950/60">
         {!isCollapsed ? (
           <div className="flex items-center gap-3 overflow-hidden cursor-pointer" onClick={() => onRouteChange('dashboard')}>
-            <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-md shadow-blue-500/20 shrink-0 ring-1 ring-white/20">
+            <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-blue-600 text-white shadow-md shrink-0 ring-1 ring-white/20">
               <Zap className="w-5 h-5 fill-white text-white" />
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-1.5">
                 <span className="font-extrabold text-base tracking-wider text-white font-mono">CAMPUS<span className="text-blue-400">OS</span></span>
-                <span className="text-[10px] px-1.5 py-0.2 rounded bg-blue-500/20 text-blue-300 font-semibold border border-blue-500/30">AI</span>
+                <span className="text-[10px] px-1.5 py-0.2 rounded bg-blue-500/20 text-blue-300 font-semibold border border-blue-500/30">OPS</span>
               </div>
-              <span className="text-[10px] text-slate-400 font-medium tracking-tight truncate">Multi-Agent Decision Support</span>
+              <span className="text-[10px] text-slate-400 font-medium tracking-tight truncate">Campus operations desk</span>
             </div>
           </div>
         ) : (
           <div className="mx-auto cursor-pointer" onClick={() => onRouteChange('dashboard')}>
-            <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white shadow-md shadow-blue-500/20">
+            <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-blue-600 text-white shadow-md">
               <Zap className="w-5 h-5 fill-white" />
             </div>
           </div>
@@ -129,7 +129,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               key={item.id}
               onClick={() => onRouteChange(item.id)}
               className={cn(
-                'w-full flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-all group cursor-pointer relative',
+             'w-full flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium transition-all group cursor-pointer relative',
                 isActive
                   ? 'bg-blue-600/15 text-blue-400 font-semibold border border-blue-500/30 shadow-sm shadow-blue-950'
                   : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/80',
@@ -150,7 +150,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   {item.badge && (
                     <span
                       className={cn(
-                        'text-[10px] px-2 py-0.5 rounded-full font-medium shrink-0',
+                         'text-[10px] px-2 py-0.5 rounded-sm font-medium shrink-0',
                         badgeStyles[item.badgeVariant || 'neutral']
                       )}
                     >
@@ -173,7 +173,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         {!isCollapsed ? (
           <div className="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800/80 flex items-center gap-3">
             <div className="relative">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-700 flex items-center justify-center text-white font-bold text-sm shadow">
+              <div className="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center text-white font-bold text-sm shadow">
                 RS
               </div>
               <span className="absolute -bottom-0.5 -right-0.5 w-3 h-3 rounded-full bg-emerald-500 ring-2 ring-slate-900" />
@@ -189,7 +189,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           </div>
         ) : (
           <div className="flex justify-center">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-700 flex items-center justify-center text-white font-bold text-sm shadow">
+            <div className="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center text-white font-bold text-sm shadow">
               RS
             </div>
           </div>
